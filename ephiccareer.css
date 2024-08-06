@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.job-list {
+    display: grid;
+    gap: 20px;
+}
+.job-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.job-card:hover {
+    transform: scale(1.05);
+}
+.job-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.job-card-content {
+    padding: 15px;
+}
+.job-card h3 {
+    margin: 0 0 10px 0;
+}
+.job-card p {
+    margin: 0;
+    color: #666;
+}
+.job-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.job-details {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.job-details h2 {
+    margin-top: 0;
+}
+.job-details ul, .job-details ol {
+    padding-left: 20px;
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .job-list, .job-details {
+        flex: 1;
+    }
+}
+
+
+
+
+
+.scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .scroll-arrow a {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    animation: bounce 2s infinite;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .scroll-arrow a:hover {
+    color: #007bff;
+  }
+  
+  .scroll-arrow.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .scroll-arrow {
+      bottom: 10px;
+    }
+    
+    .scroll-arrow a {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scroll-arrow {
+      bottom: 5px;
+    }
+    
+    .scroll-arrow a {
+      font-size: 20px;
+    }
+  }
+  
+  
+  /* Scroll Up Button Style */
+  #scrollUpBtn {
+    position: fixed;
+    bottom: 70px; /* Adjust as needed */
+    right: 20px;
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 123, 255, 0.5); /* Semi-transparent background */
+    border: none; 
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #scrollUpBtn:hover {
+    opacity: 0.8;
+    background-color: rgba(0, 123, 255, 0.7); /* Slightly more opaque on hover */
+  }
+
+
+
+
+
+
+  .hiring-banner {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hiring-shape {
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .were {
+    background-color: #FFD700; /* Yellow */
+    color: #000000;
+    font-size: 34px;
+    padding: 10px 20px;
+    transform: skew(-10deg);
+  }
+  
+  .hiring {
+    background-color: #FF0000; /* Red */
+    color: #FFFFFF;
+    font-size: 46px;
+    font-weight: bold;
+    padding: 15px 30px;
+    transform: skew(-10deg);
+  }
+  
+  .were, .hiring {
+    display: inline-block;
+  }
+  
+  .were > *, .hiring > * {
+    transform: skew(10deg);
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+  /* Footer styles */
+  @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+  
+  footer {
+    background-color: #232733;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  
+  .footer-container div {
+    margin: 10px;
+  }
+  
+  .footer-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .footer-icons a:hover {
+    color: #00aced;
+  }
+  
+  .footer-bottom a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column;
+    }
+  
+    .right-column {
+      padding-left: 0;
+    }
+  }

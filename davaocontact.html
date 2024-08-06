@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" href="img/EPHIC_LOGO_OFFICIAL-removebg.png" type="image/x-icon">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f1; /* Light green background */
+        }
+
+        header {
+            background-color: #4CAF50; /* Herbal green */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            padding-top: 5rem;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            background-color: #ffffff; /* White background for content area */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Vertical centering */
+            justify-content: center; /* Horizontal centering */
+        }
+
+        .left-column {
+            background-color: #eaf0e5; /* Very light green */
+            border-right: 1px solid #ddd;
+        }
+
+        .right-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            max-width: 100%;
+            border: none;
+        }
+
+        
+  /* Footer styles */
+  @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+  
+  footer {
+    background-color: #232733;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  
+  .footer-container div {
+    margin: 10px;
+  }
+  
+  .footer-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .footer-icons a:hover {
+    color: #00aced;
+  }
+  
+  .footer-bottom a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column;
+    }
+  
+    .right-column {
+      padding-left: 0;
+    }
+  }
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+  <a class="navbar-brand" href="main.html">
+      <img src="img/EPHIC_LOGO_OFFICIAL-removebg.png" width="30" height="30" class="d-inline-block align-top" alt="EPHIC Logo">
+      EPHIC
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="main.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="OurCompany.html">Our Company</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Product.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ephiccareer.html">EPHIC Career</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar -->
+    <main>
+        <div class="container">
+            <div class="left-column">
+                <div class="contact-info">
+                    <h2>Davao Contact</h2>
+                    <p><strong>Address:</strong> Prk 9 Upper Catitipan Buhangin, Davao City</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> ajconejar13@gmai.com</p>
+                </div>
+            </div>
+            <div class="right-column">
+              <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sph!4v1722825318550!5m2!1sen!2sph!6m8!1m7!1sa1NXzf6sOP_UgLr-NaP7mg!2m2!1d7.140493751587447!2d125.6406195978557!3f251.22885!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Example JavaScript code can be added here
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Contact Us page loaded');
+        });
+    </script>
+<footer>
+  <div class="footer-container">
+      <div class="contact-info">
+          <p>ellestreque.pharmaceutical@gmail.com</p>
+          <p>+43(1)28663 26 384</p>
+      </div>
+      <div class="company-info">
+          <p>EPHIC®</p>
+          <p>Ellestreque Pharmaceutical and Industrial Corporation</p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/ellestreque.marketing"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+          </div>
+      </div>
+      <div class="address">
+          <p>Prk 8 Upper Catitipan, Buhangin</p>
+          <p>Davao City | Philippines</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <a href="main.html">HOME</a>
+      <a href="OurCompany.html">Our Company</a>
+      <a href="Product.html">Product</a>
+      <a href="ephiccareer.html">EPHIC Career</a>
+  </div>
+  <div class="footer-copy">
+      <p>2024 © EPHIC | IT Support - Aaron</p>
+  </div>
+</footer>
+
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

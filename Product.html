@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" href="img/EPHIC_LOGO_OFFICIAL-removebg.png" type="image/x-icon">
+  <title>Ellestreque Pharmaceutical and Industrial Corporation</title>
+  <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+
+  <!-- Scroll Up Button -->
+  <button id="scrollUpBtn" onclick="scrollToTop()">▲</button>
+  <!-- Scroll Up Button -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="main.html">
+      <img src="img/EPHIC_LOGO_OFFICIAL-removebg.png" width="30" height="30" class="d-inline-block align-top" alt="EPHIC Logo">
+      EPHIC
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="main.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="OurCompany.html">Our Company</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Product.html">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ephiccareer.html">EPHIC Career</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Search and Filter Bar -->
+  <div class="filter-bar">
+    <input type="text" id="searchBar" placeholder="Search for products...">
+    <button id="filterBtn">Search</button>
+  </div>
+
+  <!-- acetone -->
+  <div class="product-grid" id="productGrid">
+    <!-- Example Product Card with Quick View Overlay -->
+    <div class="product-card" data-image-15ml="Productimg/acetone/acetone15ml.png" data-image-25ml="Productimg/acetone/acetone25ml.png" data-image-60ml="Productimg/acetone/acetone60ml.png" data-image-120ml="Productimg/acetone/acetone120ml.png" data-image-500ml="Productimg/acetone/Acetone500ml.jpg">
+      <img src="Productimg/acetone/acetone15ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Acetone</h3>
+        <!-- Size Selector -->
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+            <option value="25ml">25 ml</option>
+            <option value="60ml">60 ml</option>
+            <option value="120ml">120 ml</option>
+            <option value="500ml">500 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <!-- Quick View Overlay -->
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Uses</h4>
+          <p>Finger Nail Polish Remover, Paint Remover, and Mainly used as a Solvent.</p>
+          <!-- Add more details here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Aceite De Manzanilla -->
+    <div class="product-card" data-image-15ml="Productimg/aceite demanzilla.png" data-image-25ml="Productimg/aceitedemanzanilla/aceitedemanzanilla25ml.png" data-image-100ml="Productimg/aceitedemanzanilla/aceitedemanzanilla100ml.png" data-image-120ml="Productimg/aceitedemanzanilla/aceitedemanzanilla120ml.png">
+      <img src="Productimg/aceitedemanzanilla/aceitedemanzanilla25ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Aceite De Manzanilla</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+            <option value="25ml">25 ml</option>
+            <option value="100ml">100 ml</option>
+            <option value="120ml">120 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>Helps expel abdominal distention due to fiatus.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Manzanilla oil, Coloring, and White oil.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Appy a generous amount o oil extremelly and rub gently over the affected
+            areas as often as desired.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aceite De Manzanilla -->
+    <div class="product-card" data-image-25ml="Productimg/electruscentoil/Electruscent Oil25ml.png" data-image-50ml="Productimg/electruscentoil/electruscentoil50ml.png" data-image-100ml="Productimg/electruscentoil/Electruscentoil100ml.png">
+      <img src="Productimg/electruscentoil/Electruscent Oil25ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electruscent Oil (REGULAR)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="25ml">25 ml</option>
+            <option value="50ml">50 ml</option>
+            <option value="100ml">100 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>For the relief of rheumatism, stiff neck, back pains, headache, muscular joint pains,
+            cramps and gas pain. Also for treatment of minor burns and bruises and minor skin 
+            disorder.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Methyl Salicylate, Camphor, Menthol, and Eucalyptol.</p>
+          <h4>DIRECTIONS FOR USE:</h4>
+          <p>Apply sufficient amount of oil by gentle massage on the affected area until penetration
+            heat is felt. Repeat 3 to 4 times if necessary.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-15ml="Productimg/product4_15ml.jpg" data-image-25ml="Productimg/Methyl salicy.png" data-image-50ml="Productimg/product4_50ml.jpg" data-image-100ml="Productimg/salicylicacid/salyliclate100ml.png">
+      <img src="Productimg/Methyl salicy.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Oil of WinterGreen</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+            <option value="25ml">25 ml</option>
+            <option value="50ml">50 ml</option>
+            <option value="100ml">100 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-30ml="Productimg/Electropureminiral/Electro PureMineral30ml.png" data-image-60ml="Productimg/Electropureminiral/puremineraloil60ml.png" data-image-120ml="Productimg/Methyl salicy.png">
+      <img src="Productimg/Electropureminiral/Electro PureMineral30ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electro Pure Mineral Oil</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="30ml">30 ml</option>
+            <option value="60ml">60 ml</option>
+            <option value="120ml">120 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>Used as skin moisturizer and skin softener.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Pure mineral oil.</p>
+          <h4>DIRECTIONS FOR USE:</h4>
+          <p>Pour some drops of oil on your hands and rub them together, then apply it to your skin.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-10gms="Productimg/kiddiecare/kiddiecarecottonrolls10grams.png" data-image-25gms="Productimg/kiddiecare/kiddiecarecottonrolls25grams.png" data-image-50gms="Productimg/Methyl salicy.png" data-image-100gms="Productimg/Methyl salicy.png" data-image-400gms="Productimg/Methyl salicy.png">
+      <img src="Productimg/kiddiecare/kiddiecarecottonrolls10grams.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Kiddie Care (Cotton Rolls)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="10gms">10 gms</option>
+            <option value="25gms">25 gms</option>
+            <option value="50gms">50 gms</option>
+            <option value="100gms">100 gms</option>
+            <option value="400gms">400 gms</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Direction</h4>
+          <p>Description of Product 4.</p>
+          <h4>Active Ingredients</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-25ml="Productimg/lovelybellemineraloil/lovelybellebabyoil25ml.png" data-image-50ml="Productimg/lovelybellemineraloil/LovelyBelle50ml.png" data-image-60ml="" data-image-100ml="" data-image-120ml="Productimg/lovelybellemineraloil/lovelybellemineraloil 120ml.png">
+      <img src="Productimg/lovelybellemineraloil/lovelybellebabyoil25ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Lovely Belle (Mineral Oil)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="25ml">25 ml</option>
+            <option value="50ml">50 ml</option>
+            <option value="60ml">60 ml</option>
+            <option value="100ml">100 ml</option>
+            <option value="120ml">120 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>used as skin moisturizer.</p>
+          <h4>INGREDIENTS</h4>
+          <p>White mineral oil.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Pour some drops of oil on your hands and rub them together,
+            apply it to your skin or hair.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="product-card" data-image-25ml="Productimg/lovelybellemineraloil/lovelybellebabyoil25ml.png" data-image-50ml="Productimg/lovelybellemineraloil/LovelyBelle50ml.png" data-image-60ml="" data-image-100ml="Productimg/lovelybellemineraloil/lovelybellebabyoil100ml.png">
+      <img src="Productimg/lovelybellemineraloil/lovelybellebabyoil100ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Lovely Belle (Baby Oil)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="25ml">25 ml</option>
+            <option value="50ml">50 ml</option>
+            <option value="100ml">100 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>used as skin moisturizer.</p>
+          <h4>INGREDIENTS</h4>
+          <p>White mineral oil.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Pour some drops of oil on your hands and rub them together,
+            apply it to your skin or hair.</p>
+        </div>
+      </div>
+    </div>
+
+    
+     <div class="product-card" data-image-60ml="Productimg/electromassageoil/electromassageoil60ml.png" data-image-120ml="Productimg/electromassageoil/Electromassageoil120ml.png">
+      <img src="Productimg/electromassageoil/electromassageoil60ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electro Massage Oil</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="60ml">60 ml</option>
+            <option value="120ml">120 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>used as skin moisturizer.</p>
+          <h4>INGREDIENTS</h4>
+          <p>White mineral oil.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Pour some drops of oil on your hands and rub them together,
+            apply it to your skin or hair.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-25tips="Productimg/kiddiecare/Kiddiecarecottonbuds50tips.png">
+      <img src="Productimg/kiddiecare/Kiddiecarecottonbuds50tips.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Kiddie Care (Cotton Buds)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="50tips">25 tips</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-image-25ml="Productimg/electruscentoil(fortified)/electruscentoil25ml(fortified).png" data-image-50ml="Productimg/electruscentoil(fortified)/electruscentoil(fortified)50ml.png" data-image-100ml="Productimg/kiddiecare/Kiddiecarecottonbuds50tips.png">
+      <img src="Productimg/electruscentoil(fortified)/electruscentoil25ml(fortified).png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electruscent Oil (Fortified)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="25ml">25 ml</option>
+            <option value="50ml">50 ml</option>
+            <option value="100ml">100 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATION</h4>
+          <p>For the relief of rheumatism, stiff neck, back pains, headache, muscular joint pains,
+            cramps and gas pain. Also for treatment of minor burns and bruises and minor skin 
+            disorder.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Description of Product 4.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-180ml="Productimg/electroisopropylalcohol/Electroisopropylalcohol180ml.png" data-image-473ml="Productimg/electroisopropylalcohol/electroisopropylalcohol473ml.png">
+      <img src="Productimg/electroisopropylalcohol/Electroisopropylalcohol180ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electro Isopropyl (ALCOHOL 70%)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select"> 
+            <option value="180ml">180 ml</option>
+            <option value="473ml">473 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Use</h4>
+          <p>Hand sanitizer to help reduce bacteria that potentially can cause disease. For use when soap and waer are not available.</p>
+          <h4>Active Ingredients</h4>
+          <p>Ethyl Alcohol 70% v/v.</p>
+        </div>
+        </div>
+    </div>
+
+      <div class="product-card" data-image-180ml="Productimg/ethylaclohol/ethylalcohol180ml.png">
+      <img src="Productimg/ethylaclohol/ethylalcohol180ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electro Ethyl Alcohol (40% Solution)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select"> 
+            <option value="180ml">180 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Use</h4>
+          <p>Hand sanitizer to help reduce bacteria that potentially can cause disease. For use when soap and waer are not available.</p>
+          <h4>Active Ingredients</h4>
+          <p>Ethyl Alcohol 70% v/v.</p>
+        </div>
+        </div>
+    </div>
+
+     <div class="product-card" data-image-180ml="Productimg/electroethylalcoholwithmoisturizer/electroethylalcohol180ml.png">
+      <img src="Productimg/electroethylalcoholwithmoisturizer/electroethylalcohol180ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Electro Ethyl Alcohol with Moisturizer (ANTISEPTIC 70%)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select"> 
+            <option value="180ml">180 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Use</h4>
+          <p>Hand sanitizer to help reduce bacteria that potentially can cause disease. For use when soap and waer are not available.</p>
+          <h4>Active Ingredients</h4>
+          <p>Ethyl Alcohol 70% v/v.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-image-10ml="Productimg/benzalkoniumchloride/benzalkoniumchloride5ml.png" data-image-5ml="Productimg/benzalkoniumchloride/benzalkoniumchloride10ml.png">
+      <img src="Productimg/benzalkoniumchloride/benzalkoniumchloride10ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Benzalkonium Chloride</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="5ml">5 ml</option>
+            <option value="10ml">10 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-15ml="Productimg/ap-apsolution/ap-apsolution15ml.png" data-image-25ml="Productimg/ap-apsolution/ap-apsolution25ml.png">
+      <img src="Productimg/ap-apsolution/ap-apsolution15ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">AP-AP Solution</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+            <option value="25ml">25 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>For the treatment of localized tines flava.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Salicylic Acid, Ethyl Alcohol, De-ionized water, and Coloring.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Apply on affected area using cotton buds.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-25ml="Productimg/aceitedealcamforado/aceitedealcamforado25ml.png" data-image-120ml="Productimg/aceitedealcamforado/aceitedealcamforado120ml.png">
+      <img src="Productimg/aceitedealcamforado/aceitedealcamforado25ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Aceite De Alcamforado</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="25ml">25 ml</option>
+            <option value="120ml">120 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>Applied as counterirritant in sprains, muscle and joint pains, rheumatism, acute bronchitis and other
+            mild respiratory tract disorders.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Camphor and q.s of white oil.</p>
+          <h4>DIRECTIONS FOR USE:</h4>
+          <p>Rub gently over affected areas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-30ml="Productimg/herbalayalinimentoil/herbalayalinimentoil30ml.png" data-image-60ml="Productimg/herbalayalinimentoil/herbalayalinimentoil60ml.png">
+      <img src="Productimg/herbalayalinimentoil/herbalayalinimentoil30ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Herbalaya Liniment Oil</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="30ml">30 ml</option>
+            <option value="60ml">60 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Detail</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATION</h4>
+          <p>For relief of stiffness and swelling of muscles and joints, insects bites and varicose veins.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Methy Salicylate, Mentho, and Camphor.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Pour sufficient quantity of Herbalaya and massage into the affected area until absorted by the skin.
+            Apply 2 to 3 times daily, or as required by the physician.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-60ml="Productimg/herbalayalinimentoil/herbalayalinimentoil30ml.png" data-image-120ml="Productimg/cutcileremover/Cuticleremover120ml.png">
+      <img src="Productimg/cutcileremover/Cuticleremover120ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Cuticle Remover</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="60ml">60 ml</option>
+            <option value="120ml">120 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>Used for cleaning the nails before application of nail polish.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Water, essential oil, caustic soda, and colorant.</p>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Apply directly onto cuticles and Wash hands after use to eliminate al traces o product from nails.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-15ml="Productimg/eucalyptusoil/eucalyptusoil15ml.png">
+      <img src="Productimg/eucalyptusoil/eucalyptusoil15ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Eucalyptus Oil</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-30gms="Productimg/aliviocream/aliviocream30grms.png">
+      <img src="Productimg/aliviocream/aliviocream30grms.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Herbalaya Alivio Cream</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="30gms">30 gms</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-10ml="Productimg/herbalayarollon/Herbalayarollon10ml.png">
+      <img src="Productimg/herbalayarollon/Herbalayarollon10ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Herbalaya Liniment Rollon</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="10ml">10 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>For relief of stiffness and swelling of muscles and joints, insect bites and varicose veins.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Methyl Salicylate, Menthol, and Camphor.</p>
+          <h4>DIRECTIONS FOR USE:</h4>
+          <p>Roll the roller ball over the desired areas of your skin in a circuar motion.
+            Apply 2-3 times a day or as you desired.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-15ml="Productimg/gentianviolet/gentianviolet15ml.png">
+      <img src="Productimg/gentianviolet/gentianviolet15ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Gentian Violet</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-15ml="Productimg/hydroperoxide/hydroperoxide60ml.png">
+      <img src="Productimg/hydroperoxide/hydroperoxide60ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Hydrogen Peroxide</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="60ml">60 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATION & DIRECTIONS</h4>
+          <p>As an antiseptic and germicide for minor cuts and abrasions use-full strenght.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Hydrogen Peroxide, Acetanilide, and Water.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="product-card" data-image-500ml="Productimg/hypoclorox/hypoclorox500ml.png">
+     <img src="Productimg/hypoclorox/hypoclorox500ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Hypochlorox (Liquid Bleach)</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="500ml">500 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>DIRECTION FOR USE:</h4>
+          <p>Laundry: Seperate laundry by color and fabric. Wash whites separates from other colors. Do not use on silk, wool, and leather. Pre-treat
+            heavy soils and dark stains, Use 5 Tablespoons of HYPOCHLOROX per 1 gallon of water and soak laundry for 5-10 minutes. Add detergent. Wash clothes and rinse well.</p>
+           <h4>For machine wash:</h4>
+          <p>Dilute 1 tablespoon of HYPOCHLOROX to a 1 liter of water, add detergent and complete the wash cycle after soaking laundry for 10 minutes.
+            Rinse well.</p>
+          <h4>For household use:</h4>
+          <p>Mix 3 tablespoon HYPOCHLOROX to a liter of water. Spread the solution to the surfaces and allow 5-10 minutes to contact before rinsing.</p>
+        </div>
+      </div>
+    </div>
+
+       <div class="product-card" data-image-250ml="Productimg/muriaticacid/muriaticacid250ml.png" data-image-500ml="Productimg/muriaticacid/muriaticacid500ml.png">
+      <img src="Productimg/muriaticacid/muriaticacid250ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Muriatic Acid</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="250ml">250 ml</option>
+            <option value="500ml">500 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>USES</h4>
+          <p>For industrial purposes and as cleaning agent.</p>
+          <h4>CAUTION:</h4>
+          <p>Poison, Harmful if swallowed Do not breathe vapor or fumes. Causes burns.
+            Avoid contact with skin or eyes.</p>
+          <h4>ANTIDOTE:</h4>
+          <p>Give 2-3 tablespoonfuls milk of magnesia or 3-5 grams magnesium oxide.
+          Give demulcent drinks or milk. Do not induce vomiting Call a PHYSICIAN.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-25ml="Productimg/salicylicacid/salicylicacid25ml.png" data-image-50ml="Productimg/salicylicacid/salicylicacid50ml.png" data-image-100ml="">
+      <img src="Productimg/salicylicacid/salicylicacid25ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Salicylic Acid</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="25ml">25 ml</option>
+              <option value="50ml">50 ml</option>
+              <option value="100ml">100 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Quick View</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>Used For</h4>
+          <p>Description of Product 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-image-15ml="Productimg/povidone iodine/povidoneiodine15ml.png" data-image-60ml="Productimg/povidone iodine/povidoneiodine60ml.png">
+      <img src="Productimg/povidone iodine/povidoneiodine15ml.png" alt="Product Image" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Povidone Iodine</h3>
+        <div class="size-selector">
+          <label for="size">Size:</label>
+          <select class="size-select">
+            <option value="15ml">15 ml</option>
+            <option value="60ml">60 ml</option>
+          </select>
+        </div>
+        <button class="quick-view-btn">Product Details</button>
+      </div>
+      <div class="quick-view-overlay">
+        <div class="quick-view-content">
+          <button class="close-btn">&times;</button>
+          <h4>INDICATIONS</h4>
+          <p>For prevention and treatment of skin infections, disinfection of wound, cuts, abrasion and burns.
+          For pre and post operative disinfection or preoperative skin preparation of patients.</p>
+          <h4>INGREDIENTS</h4>
+          <p>Povidone-iodine.</p>
+          <h4>DIRECTIOLNS FOR USE:</h4>
+          <p>When used as a disinfectant or for treatment, use full strength. As a scrub, dilute with 1 1/2 -2 parts water.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--ADD-->
+</div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <p>ellestreque.pharmaceutical@gmail.com</p>
+        <p>+43(1)28663 26 384</p>
+      </div>
+      <div class="company-info">
+        <p>EPHIC®</p>
+        <p>Ellestreque Pharmaceutical and Industrial Corporation</p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/ellestreque.marketing"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="address">
+        <p>Prk 8 Upper Catitipan, Buhangin</p>
+        <p>Davao City | Philippines</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="main.html">HOME</a>
+      <a href="OurCompany.html">Our Company</a>
+      <a href="Product.html">Product</a>
+      <a href="ephiccareer.html">EPHIC Career</a>
+    </div>
+    <div class="footer-copy">
+      <p>2024 © EPHIC | IT Support - Aaron</p>
+    </div>
+  </footer> 
+
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="Product.js"></script>
+</body>
+</html>
