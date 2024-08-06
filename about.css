@@ -4,6 +4,27 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+/* Make the map responsive */
+.map iframe {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  border: 0;
+}
+
+/* Optional: Add some padding and centering for better appearance */
+.map {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Adjust the height on larger screens if needed */
+@media (min-width: 768px) {
+  .map iframe {
+      height: 450px; /* Original height */
+  }
+}
+
   
   body {
     font-family: 'Arial', sans-serif;
